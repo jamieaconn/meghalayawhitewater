@@ -3601,6 +3601,7 @@
 
 			#main > .post.featured {
 				text-align: center;
+				overflow: auto;
 			}
 
 			@media screen and (max-width: 1280px) {
