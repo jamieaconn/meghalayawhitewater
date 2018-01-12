@@ -62,15 +62,28 @@ sitemap:
 								</header>
 
 								<span class="image left"><img src="{{ "/images/meghalayamap.png" | absolute_url }}" alt="" /></span>
-								<p>A 2000 m high bedrock plateau with 12 m of rainfall a year <br> The perfect recipe for a dream whitewater destination</p>
-
-                <p>Family day trips close to the city, challenging multi-day classics and everything in between <br>These are a few of Meghalaya's best rivers</p>
+								<p>A state in the North East of India. <br>A 2000 m high bedrock plateau with 12 m of rainfall a year makes the perfect recipe for a dream whitewater destination.</p>
 							</article>
 
+							<article>
+								<p>Family day trips close to the city, challenging multi-day classics and everything in between. <br>These are a few of Meghalaya's best rivers.</p>
+								<div class="box alt">
+									<div class="row 50% uniform">
+										<div class="4u"><span class="image fit"><img src="{{ "/images/kynshi.png" | absolute_url }}" alt="" /></span></div>
+										<div class="4u"><span class="image fit"><img src="{{ "/images/kopili.png" | absolute_url }}" alt="" /></span></div>
+										<div class="4u"><span class="image fit"><img src="{{ "/images/umtrew.png" | absolute_url }}" alt="" /></span></div>
+										<!-- Break -->
+										<div class="4u"><span class="image fit"><img src="{{ "/images/wahblei.png" | absolute_url }}" alt="" /></span></div>
+										<div class="4u"><span class="image fit"><img src="{{ "/images/umngi.png" | absolute_url }}" alt="" /></span></div>
+										<div class="4u$"><span class="image fit"><img src="{{ "/images/umngot.png" | absolute_url }}" alt="" /></span></div>
+										
+									</div>
+								</div>
+							 </article>
 						<!-- Posts -->
 							<section class="posts">
-                {% for post in site.posts limit:3 %}
-                {% assign mod3 = forloop.index | modulo: 3 %}
+                {% for post in site.posts limit:4 %}
+                {% assign mod4 = forloop.index | modulo: 4 %}
   								<article>
   									<header>
   										<span class="date">{{ post.date | date_to_string }}</span>
@@ -82,14 +95,6 @@ sitemap:
   										<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
   									</ul>
   								</article>
-                  {% if mod3 == 0 %}
-                  <article>
-  									<header>
-  										<h2><a href="#">Sponsored</h2>
-  									</header>
-
-  								</article>
-                  {% endif %}
                 {% endfor %}
 
 							</section>
