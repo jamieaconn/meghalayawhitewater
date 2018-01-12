@@ -1,22 +1,36 @@
 # Site
 title:              Meghalaya Whitewater
-bio:                'Jekyll version of the Massively theme by HTML5UP'
-description:        "Jekyll version of the Massively theme by HTML5UP"
+bio:                'Rivers in the wettest place on earth'
+description:        "Rivers in the wettest place on earth"
 locale:             en_US
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
+include: ['_pages']
+
+
 defaults:
 - scope:
-    path: ''
-    type: posts
+    path: '/_pages'
+    type: "pages"
+  values:
+    permalink: "/page/:title/"
+    layout: "page"
+
+- scope:
+    path: '/_posts'
+    type: pages
   values:
     permalink: "/blog/:title/"
     layout: post
     author:
 
+
 # Jekyll
+
 permalink:          /blog/:title/
+
+
 markdown:           kramdown
 highlighter:        rouge
 kramdown:
