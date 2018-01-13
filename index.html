@@ -64,22 +64,29 @@ sitemap:
 								<span class="image left"><img src="{{ "/images/meghalayamap.png" | absolute_url }}" alt="" /></span>
 								<p>A state in the North East of India. <br>A 2000 m high bedrock plateau with 12 m of rainfall a year makes the perfect recipe for a dream whitewater destination.</p>
 							</article>
+								
+<!-- Posts -->
+	<p>Family day trips close to the city, challenging multi-day classics and everything in between. <br>These are a few of Meghalaya's best rivers.</p>
+							<section class="posts">
 
-							<article>
-								<p>Family day trips close to the city, challenging multi-day classics and everything in between. <br>These are a few of Meghalaya's best rivers.</p>
-								<div class="box alt">
-									<div class="row 50% uniform">
-										<div class="4u"><span class="image fit"><img src="{{ "/images/kynshi.png" | absolute_url }}" alt="" /></span></div>
-										<div class="4u"><span class="image fit"><img src="{{ "/images/kopili.png" | absolute_url }}" alt="" /></span></div>
-										<div class="4u"><span class="image fit"><img src="{{ "/images/umtrew.png" | absolute_url }}" alt="" /></span></div>
-										<!-- Break -->
-										<div class="4u"><span class="image fit"><img src="{{ "/images/wahblei.png" | absolute_url }}" alt="" /></span></div>
-										<div class="4u"><span class="image fit"><img src="{{ "/images/umngi.png" | absolute_url }}" alt="" /></span></div>
-										<div class="4u$"><span class="image fit"><img src="{{ "/images/umngot.png" | absolute_url }}" alt="" /></span></div>
-										
-									</div>
-								</div>
-							 </article>
+				{% assign riverPages = site.pages | where:"category","river" %}
+                {% for page in riverPages  limit:4 %}
+                {% assign mod2 = forloop.index | modulo: 2 %}
+                
+  								<article>
+
+  									<header>
+  										<h2><a href="{{ page.url | absolute_url }}">{{ page.title }}</h2>
+  									</header>
+  									<a href="{{ page.url | absolute_url }}" class="image fit"><img src="{{ page.image | absolute_url }}" alt="" /></a>
+  									<p>{{ page.excerpt }}</p>
+
+  								</article>
+                {% endfor %}
+
+							</section>
+
+
 						<!-- Posts -->
 							<section class="posts">
                 {% for post in site.posts limit:2 %}
@@ -98,6 +105,9 @@ sitemap:
                 {% endfor %}
 
 							</section>
+
+
+													
 
 						<!-- Footer -->
 							<footer>
