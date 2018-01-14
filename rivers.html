@@ -1,32 +1,26 @@
 ---
 layout: page
-title: Meghalaya Whitewater
+title: Rivers
 description: Having a massive list of every element of a theme is useful for quick referencing and ideas. Here is every component of Massively!
 sitemap:
     priority: 0.7
     lastmod: 2017-11-02
     changefreq: weekly
 ---
-<header class="major">
-	<h1>Rivers</h1>
-</header>
-
-
-
-<article>
+<div id="main">
+	<!-- Pages -->
 	<p>Family day trips close to the city, challenging multi-day classics and everything in between. <br>These are a few of Meghalaya's best rivers.</p>
-	<div class="box alt">
-		<div class="row 50% uniform">
-			<a href="{{"/kynshi/" | absolute_url }}">
-				<div class="4u"><span class="image fit"><img src="{{ "/images/kynshi.png" | absolute_url }}" alt="" /></span></div>
-			</a>
-			<div class="4u"><span class="image fit"><img src="{{ "/images/kopili.png" | absolute_url }}" alt="" /></span></div>
-			<div class="4u"><span class="image fit"><img src="{{ "/images/umtrew.png" | absolute_url }}" alt="" /></span></div>
-			<!-- Break -->
-			<div class="4u"><span class="image fit"><img src="{{ "/images/wahblei.png" | absolute_url }}" alt="" /></span></div>
-			<div class="4u"><span class="image fit"><img src="{{ "/images/umngi.png" | absolute_url }}" alt="" /></span></div>
-			<div class="4u$"><span class="image fit"><img src="{{ "/images/umngot.png" | absolute_url }}" alt="" /></span></div>
-			
-		</div>
-	</div>
- </article>
+	<section class="pages">
+
+		{% assign riverPages = site.pages | where:"category","river" %}
+	    {% for page in riverPages  limit:4 %}
+
+			<article>
+				<a href="{{ page.url | absolute_url }}" class="image fit darken-overlay">
+					<img src="{{ page.image | absolute_url }}" alt=""/>
+					<div class="centered">{{page.title}}</div>
+				</a>
+			</article>
+		{% endfor %}
+	</section>
+</div>

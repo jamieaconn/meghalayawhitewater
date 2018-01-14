@@ -45,15 +45,9 @@ sitemap:
 
             {% include nav.html %}
 
-						<ul class="icons">
-              <li><a href="https://twitter.com/{{site.twitter}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
-              <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
-              <li><a href="https://instagram.com/{{site.instagram}}" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
-              <li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
-						</ul>
 					</nav>
 
-				<!-- Main -->
+					<!-- Main -->
 					<div id="main">
 						<!-- Featured Post -->
 							<article class="post featured">
@@ -65,32 +59,27 @@ sitemap:
 								<p>A state in the North East of India. <br>A 2000 m high bedrock plateau with 12 m of rainfall a year makes the perfect recipe for a dream whitewater destination.</p>
 							</article>
 								
-<!-- Posts -->
-	<p>Family day trips close to the city, challenging multi-day classics and everything in between. <br>These are a few of Meghalaya's best rivers.</p>
-							<section class="posts">
+							<!-- Pages -->
+							<p>Family day trips close to the city, challenging multi-day classics and everything in between. <br>These are a few of Meghalaya's best rivers.</p>
+							<section class="pages">
 
-				{% assign riverPages = site.pages | where:"category","river" %}
-                {% for page in riverPages  limit:4 %}
-                {% assign mod2 = forloop.index | modulo: 2 %}
+								{% assign riverPages = site.pages | where:"category","river" %}
+				                {% for page in riverPages  limit:4 %}
                 
   								<article>
-
-  									<header>
-  										<h2><a href="{{ page.url | absolute_url }}">{{ page.title }}</h2>
-  									</header>
-  									<a href="{{ page.url | absolute_url }}" class="image fit"><img src="{{ page.image | absolute_url }}" alt="" /></a>
-  									<p>{{ page.excerpt }}</p>
-
-  								</article>
-                {% endfor %}
+									<a href="{{ page.url | absolute_url }}" class="image fit darken-overlay">
+										<img src="{{ page.image | absolute_url }}" alt=""/>
+										<div class="centered">{{page.title}}</div>
+									</a>
+								</article>
+                				{% endfor %}
 
 							</section>
 
 
-						<!-- Posts -->
+							<!-- Posts -->
 							<section class="posts">
-                {% for post in site.posts limit:2 %}
-                {% assign mod2 = forloop.index | modulo: 2 %}
+                				{% for post in site.posts limit:2 %}
   								<article>
   									<header>
   										<span class="date">{{ post.date | date_to_string }}</span>
@@ -102,20 +91,9 @@ sitemap:
   										<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
   									</ul>
   								</article>
-                {% endfor %}
+                				{% endfor %}
 
 							</section>
-
-
-													
-
-						<!-- Footer -->
-							<footer>
-                <ul class="actions">
-                  <li><a href="{{ "/blog/" | absolute_url }}" class="button">Our Blog</a></li>
-                </ul>
-							</footer>
-
 					</div>
 
 				<!-- Footer -->
