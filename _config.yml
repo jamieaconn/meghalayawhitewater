@@ -1,7 +1,7 @@
 # Site
-title:              Meghalaya Whitewater
-bio:                'Rivers in the wettest place on earth'
-description:        "Rivers in the wettest place on earth"
+title:              Meghalaya Rivers
+bio:                'Getting wet in the rainiest place on earth'
+description:        'Getting wet in the rainiest place on earth'
 locale:             en_US
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
