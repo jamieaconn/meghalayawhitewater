@@ -2,3 +2,6 @@ _site
 _site/
 images/*
 local_info.py
+*.DS_Store
+*.pyc
+*.zip
