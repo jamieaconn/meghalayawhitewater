@@ -51,13 +51,13 @@ disqus_shortname:   default
 analytics-id:       "default"
 twitter:            default
 facebook:           default
-instagram:          default
+instagram:          meghalayarivers
 github:             default
 
 # personal
 location:           Los Angeles, CA
 phone:              310-318-5555
-email:              info@default.com
+email:              meghalayarivers@gmail.com
 
 # Gems
 gems:
