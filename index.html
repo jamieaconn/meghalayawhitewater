@@ -51,16 +51,13 @@ sitemap:
 					<div id="main">
 						<!-- Featured Post -->
 							<article class="post featured">
-								<header class="major">
-									<h2>Why Meghalaya?</h2>
-								</header>
-
-								<span class="image left"><img src="{{ "/images/meghalayamap.png" | absolute_url }}" alt="" /></span>
-								<p>A state in the North East of India. <br>A 2000 m high bedrock plateau with 12 m of rainfall a year makes the perfect recipe for a dream whitewater destination.</p>
+								<span class="image fit"><img src="{{ "/images/merged.jpg" | absolute_url }}" alt="" /></span>
 							</article>
 								
 							<!-- Pages -->
-							<p>Family day trips close to the city, challenging multi-day classics and everything in between. <br>These are a few of Meghalaya's best rivers.</p>
+							<header class="major">
+								<h2>Classic rivers</h2>
+							</header>
 							<section class="pages">
 
 								{% assign riverPages = site.pages | where:"category","river" %}
@@ -73,9 +70,18 @@ sitemap:
 									</a>
 								</article>
                 				{% endfor %}
-
 							</section>
 
+							<section>
+								<ul class="actions fit ">
+									<li><a href="/logistics/" class="button fit ">Plan your adventure</a></li>
+									<li><a href="/guidebook/" class="button fit ">Get the guidebook</a></li>
+								</ul>
+
+								<span class="image left" style="width: 50%;"><img src="{{ "/images/meghalayamap.png" | absolute_url }}" alt="" /></span>
+								<span class="image right" style="width: 50%;"><img src="{{ "/images/riwang2.png" | absolute_url }}" alt="" /></span>
+								
+							</section>
 
 							<!-- Posts -->
 							<section class="posts">
@@ -92,7 +98,6 @@ sitemap:
   									</ul>
   								</article>
                 				{% endfor %}
-
 							</section>
 					</div>
 
