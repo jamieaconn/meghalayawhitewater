@@ -2446,6 +2446,7 @@
 			display: block;
 			margin: 2.5rem 0;
 			width: 100%;
+			
 		}
 
 			.image.fit:first-child {
@@ -3081,7 +3082,6 @@
 /* Intro */
 
 	#intro {
-		background-image: url('/images/kynshidrone.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 		color: #ffffff;
@@ -3777,26 +3777,28 @@
 				width: 50%;
 			}
 
-			#main > .pages > article {
-				
+			.caption {
+				background-color: rgba(70, 72, 82, 0.3);
+				color: #ffffff !important;
+			    font-size: 1.5rem;
 			}
 
+			#main > .pages > article > .image {
+				background-size: cover;
+				background-repeat: no-repeat;
+				position: relative;
+				background-position: center;
+				display: block;
+				margin: 2.5rem 0;
+				width: 100%;
+				height: 100%;
+			
+		}
 
-			.darken-overlay div {
-			  width: 100%;
-			  height: 100%;
-			  background-color: rgba(70, 72, 82, 0.3);
-			  position: absolute;
+			.image.fit:first-child {
+				margin-top: 0;
 			}
 
-			.centered {
-			    position: relative;
-			    top: 50%;
-			    left: 50%;
-			    transform: translate(-50%, -50%);
-			    color: #ffffff !important;
-			    font-size: 1.4rem;
-			}
 
 				#main > .pages > article > :last-child {
 					margin-bottom: 0;

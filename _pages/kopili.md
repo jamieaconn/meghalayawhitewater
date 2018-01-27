@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: river
 title:  "Kopili"
 excerpt: "Warm water, big rapids and beautiful camping. Just watch out for elephants"
 image: "/images/kopili.png"

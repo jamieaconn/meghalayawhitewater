@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: river
 title:  "Umtrew"
 excerpt: "The center of Meghalaya's paddling community"
 image: "/images/umtrew.png"

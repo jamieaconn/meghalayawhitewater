@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: river
 title:  "Umngi"
 excerpt: "One of the steep southern ridge rivers, the Umngi drops off the plateau in a stunning canyon before heading into Bangladesh"
 image: "/images/umngi.png"

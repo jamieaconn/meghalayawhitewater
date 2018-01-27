@@ -1,39 +1,35 @@
 import sys
 import os
 import ftplib
-
-module_path = os.path.abspath(os.path.join('../python'))
-
-if module_path not in sys.path:
-    sys.path.append(module_path)
-
     
-def ftp_upload(filename): 
-    from local_info import ftp_url, ftp_pass, ftp_user
-    ftp = ftplib.FTP(ftp_url)
-    ftp.login(ftp_user, ftp_pass)
+from local_info import ftp_url, ftp_pass, ftp_user
 
-    ext = os.path.splitext(filename)[1]
-    if ext in (".txt", ".htm", ".html"):
-        ftp.storlines("STOR " + filename, open(filename))
-    else:
-        ftp.storbinary("STOR " + filename, open(filename), 1024)
+def uploadThis(path):
+    FTP = ftplib.FTP(ftp_url, ftp_user, ftp_pass)
+    files = os.listdir(path)
+    os.chdir(path)
 
+    for f in files:
+        print os.path.join(path, f)
+        print os.path.isfile(os.path.join(path, f))
+        if os.path.isfile(os.path.join(path, f)):
+            print "\tuploading..."
+            fh = open(f, 'rb')
+            FTP.storbinary('STOR %s' % f, fh)
+            fh.close()
+        elif os.path.isdir(os.path.join(path, f)):
+            print "\tcreating dir"
+            FTP.mkd(f)
+            FTP.cwd(f)
+            uploadThis(os.path.join(path, f))
+    FTP.cwd('..')
+    os.chdir('..')
 
+#uploadThis("/Users/jconn/meghalayarivers/_site")
 
+f = "archive.zip"
 
-
-
-if len(sys.argv) < 2:
-    print "No file given"
-    sys.exit()
-
-for i in range(1, len(sys.argv)):
-    ff = sys.argv[i]
-    if not os.path.isfile(ff):
-        print ff + " is not a file"
-    else:
-        ftp_upload(ff)
-    
-
-
+fh = open("archive.zip")
+FTP = ftplib.FTP(ftp_url, ftp_user, ftp_pass)
+FTP.storbinary('STOR %s' % f, fh)
+fh.close()

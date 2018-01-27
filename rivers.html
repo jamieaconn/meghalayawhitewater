@@ -18,9 +18,9 @@ sitemap:
 	    {% for page in riverPages  limit:4 %}
 
 			<article>
-				<a href="{{ page.url | absolute_url }}" class="image fit darken-overlay">
+				<a href="{{ page.url | absolute_url }}" class="image fit">
 					<img src="{{ page.image | absolute_url }}" alt=""/>
-					<div class="centered">{{page.title}}</div>
+					<div class="caption">{{page.title}}</div>
 				</a>
 			</article>
 		{% endfor %}
