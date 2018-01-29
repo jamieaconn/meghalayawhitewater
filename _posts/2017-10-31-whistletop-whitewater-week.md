@@ -6,6 +6,9 @@ excerpt: "Top tips from one weekend warrior to another"
 image: "/images/james_khri.png"
 ---
 
+​​<span class="image fit"><img src="{{ "/images/james_khri.png" | absolute_url }}" alt="" /></span>
+
+
 It's the end of Summer and you could take your mountain bike down your local river.
 
 There are 5 months to go until Christmas. 3 months until the winter rains. Fortunately you have 9 days leave still to take. Combine that with a bank holiday and you've got two week to play with.

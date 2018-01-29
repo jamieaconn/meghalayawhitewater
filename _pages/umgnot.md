@@ -1,15 +1,21 @@
 ---
-layout: page
+layout: river
 title:  "Umngot"
-excerpt: "The center of Meghalaya's paddling community"
-image: "/images/umngot.png"
+excerpt: ""
+image: "/images/umngot3.png"
+thumbnail: "/images/umngot3.png"
 category: "river"
 permalink: "/rivers/umngot/"
 
 ---
 
-On the banks of the Umtrew, just below the Stage 2 powerhouse, slalom kayaker Ian Vincent has built a homestay, the Shillong Whitewater Village.
+<span class="image fit"><img src="{{ "/images/umngot1.png" | absolute_url }}" alt="" /></span>
 
-Here, he teaches locals to paddle on the section below his house. He has opened it up to tourists to come and stay with his lovely family.  
+Just 3 hours from Shillong, this is a fun-for-all section and a great day out.
 
-Home to the first ever Meghalaya Whitewater Festival.
+Make sure you remember a snorkel and your fishing rod!
+
+
+<span class="image fit"><img src="{{ "/images/umngot2.png" | absolute_url }}" alt="" /></span>
+Paddling past fishermen with the bridge take out in the background.
+
