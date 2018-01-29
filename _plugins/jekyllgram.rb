@@ -38,9 +38,10 @@ module Jekyll
 
     def initialize(tag, params, token)
       @limit = params.to_i
-      @user_id = 'jamiealxconn'
+      @user_id = '5969384062'
       @client_id = '8afa30cdee1e4b7483d561c9770721d4'
       @api_url = 'https://api.instagram.com/v1'
+      @access_token = '5969384062.1677ed0.5ba0beb92255405d87b9405272f6659d'
 
       super
     end
@@ -71,7 +72,7 @@ module Jekyll
 
     def recent_photos
       method = "/users/#{@user_id}/media/recent"
-      keys = "/?client_id=#{@client_id}"
+      keys = "/?access_token=#{@access_token}"
 
       response = Net::HTTP.get_response(URI.parse(@api_url + method + keys))
       return [] unless response.is_a?(Net::HTTPSuccess)
