@@ -2,8 +2,8 @@
 layout: river
 title:  "Kopili"
 excerpt: "Warm water, big rapids and beautiful camping. Just watch out for elephants"
-image: "/images/kopili.png"
-thumbnail: "/images/kopili.png"
+image: "/images/kopili_header.jpg"
+thumbnail: "/images/kopili_thumbnail.jpg"
 category: "river"
 permalink: "/rivers/kopili/"
 

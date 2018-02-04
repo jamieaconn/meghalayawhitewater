@@ -2,8 +2,8 @@
 layout: river
 title:  "Kynshi"
 excerpt: "Probably the best kayaking trip in the world"
-image: "/images/kynshidrone.png"
-thumbnail: "/images/kynshidrone.png"
+image: "/images/kynshi_header.jpg"
+thumbnail: "/images/kynshi_thumbnail.jpg"
 category: "river"
 permalink: "/rivers/kynshi/"
 ---
