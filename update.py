@@ -10,8 +10,8 @@ def uploadThis(path):
     os.chdir(path)
 
     for f in files:
-        print os.path.join(path, f)
-        print os.path.isfile(os.path.join(path, f))
+        #print os.path.join(path, f)
+        #print os.path.isfile(os.path.join(path, f))
         if os.path.isfile(os.path.join(path, f)):
             print "\tuploading..."
             fh = open(f, 'rb')
@@ -27,9 +27,34 @@ def uploadThis(path):
 
 #uploadThis("/Users/jconn/meghalayarivers/_site")
 
-f = "archive.zip"
+#f = "archive.zip"
 
-fh = open("archive.zip")
-FTP = ftplib.FTP(ftp_url, ftp_user, ftp_pass)
-FTP.storbinary('STOR %s' % f, fh)
-fh.close()
+#fh = open("Archive.zip")
+#FTP = ftplib.FTP(ftp_url, ftp_user, ftp_pass)
+#FTP.storbinary('STOR %s' % f, fh)
+#fh.close()
+
+import ftplib
+import os
+
+
+myFTP = ftplib.FTP(ftp_url, ftp_user, ftp_pass)
+myPath = "/Users/jconn/meghalayarivers/upload/"
+def uploadThis(path):
+    files = os.listdir(path)
+    os.chdir(path)
+    for f in files:
+        newpath = os.path.join(path, f)
+        if os.path.isfile(f):
+            print "file:", f
+            fh = open(f, 'rb')
+            myFTP.storbinary('STOR %s' % f, fh)
+            fh.close()
+        elif os.path.isdir(f):
+            print "directory:", f
+            myFTP.mkd(f)
+            myFTP.cwd(f)
+            uploadThis(newpath)
+    myFTP.cwd('..')
+    os.chdir('..')
+uploadThis(myPath) # now call the recursive function  

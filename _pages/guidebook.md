@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Guidebook
+title: The Meghalaya Rivers Guidebook
 description: The Meghalaya Rivers Guidebook
 sitemap:
     priority: 0.7
@@ -10,8 +10,6 @@ permalink: "/guidebook/"
 
 ---
 ## Detailed river guides
-
-<span class="image right"><img src="{{ "/images/contents.png" | absolute_url }}" alt="" /></span>
 
 * over 40 sections on 20 rivers
 * everything from family day
@@ -30,13 +28,18 @@ trips to grade 5 classics
 * wild Meghalaya
 
 
-<span class="image right"><img src="{{ "/images/riwang.png" | absolute_url }}" alt="" /></span>
-
-
 ## Logistics and planning
 * when to go
 * where to stay
 * transport
 * finding the best pot
 
+
+## Available soon!
+Fill out the form below to receive updates
+
+<span class="image fit"><img src="{{ "/images/contents.png" | absolute_url }}" alt="" /></span>
+
+
+<span class="image fit"><img src="{{ "/images/riwang.png" | absolute_url }}" alt="" /></span>
 

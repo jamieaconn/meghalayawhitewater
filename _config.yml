@@ -1,8 +1,8 @@
 # Site
 title:              Meghalaya Rivers
-bio:                'Getting wet in the rainiest place on earth'
-description:        'Getting wet in the rainiest place on earth'
-image: '/images/kynshidrone.png'
+bio:                'Paddling in the rainiest place on earth'
+description:        'Paddling in the rainiest place on earth'
+image: '/images/kynshidrone.jpg'
 locale:             en_US
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site

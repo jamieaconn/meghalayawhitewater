@@ -17,19 +17,19 @@ You need to squeeze every last drop out of every minute. So from one weekend war
 
 ## Tip 1 - every minute counts
 
-Your not a student anymore. The 10 hour layover in Dubai is just not worth saving £37.50 on your ticket. Be prepared to spend a bit more cash and get yourself to Guwahati in double quick time, then pay for a taxi to take you from the airport straight to your first river. I recommend the [Umtrew](/rivers/umtrew/); It's amazing.
+Your not a student anymore. Is the 10 hour layover in Dubai worth saving £37.50 on your ticket? Be prepared to spend a bit more cash and get yourself to Guwahati in double quick time, then pay for a taxi to take you from the airport straight to your first river. I recommend the [Umtrew](https://www.youtube.com/watch?v=KWFsLDs9Ey0); It's close and it's amazing.
 
 <span class="image right"><img src="{{ "/images/drivers.png" | absolute_url }}" alt="" /></span>
 
 
 ## Tip 2 - hire an exceptional local driver
 
-If you are going to tick off the list of classics you've been dreaming of, you'll need the perfect driver. 
+If you are going to tick off the list of classics you've been dreaming of, you'll need the perfect driver. Fortunately you're in luck as we know just the guys for the job. Fire us off an email and we'll see if we can sort you out.
 
 
 ## Tip 3 - take your camera
 
-Meghalaya is pretty.
+Meghalaya is pretty. Take some photos to show your mum.
  
 ## Tip 4 - whitewater isn't everything
 
