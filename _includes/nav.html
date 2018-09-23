@@ -1,13 +1,15 @@
 <ul class="links">
   <li class="{% if page.url == "/" %} active {% endif %}"><a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
-  <li class="{% if page.url contains '/rivers/' %} active {% endif %}"><a href="{{ "/rivers/" | prepend: site.baseurl }}">Rivers</a></li>
-  <li class="{% if page.url contains '/guidebook/' %} active {% endif %}"><a href="{{ "/guidebook/" | prepend: site.baseurl }}">Guidebook</a></li>
+  <li class="{% if page.url contains '/book/' %} active {% endif %}"><a href="{{ "/book/" | prepend: site.baseurl }}">The Book</a></li>
+  <li class="{% if page.url contains '/whymeghalaya/' %} active {% endif %}"><a href="{{ "/whymeghalaya/" | prepend: site.baseurl }}">Why Meghalaya</a></li>
   <li class="{% if page.url contains '/logistics/' %} active {% endif %}"><a href="{{ "/logistics/" | prepend: site.baseurl }}">Logistics</a></li>
-  <li class="{% if page.url contains '/blog/' %} active {% endif %}"><a href="{{ "/blog/" | prepend: site.baseurl }}">Blog</a></li>
+  <li class="{% if page.url contains '/order/' %} active {% endif %}"><a href="{{ "/order/" | prepend: site.baseurl }}">Order The Book</a></li>
+
 </ul>
 
 
 
 <ul class="icons">
               <li><a href="https://instagram.com/{{site.instagram}}" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
+              <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
 </ul>		
