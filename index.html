@@ -1,116 +1,65 @@
 ---
-layout: null
-title: Meghalaya Rivers
-description: Paddling in the rainiest place on earth
+layout: page
+title: 
+description: <b>Meghalaya Rivers Book</b> Available Now
 sitemap:
-    priority: 1.0
+    priority: 0.7
     lastmod: 2017-11-02
     changefreq: weekly
 ---
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-  Jekyll integration by somiibo.com
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-    {% include head.html %}
 
+<ul class="actions fit ">
+	<li><a href="/buy/" class="button">Buy</a></li>
 
-	</head>
-	<body class="is-loading">
+</ul>
+<span class="image fit"><img src="{{ "/images/cover.png" | absolute_url }}" alt="" /></span>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+<section style="background-color: #5D8086;">
+	<div style="padding: 40px; color: #FFFFFF;    line-height: 1.55;">
+	<p style="text-align: center">
 
-				<!-- Intro -->
-					<div id="intro" style = "background-image: url({{site.image}});">
+		'A joy of a guidebook; on the rivers, it tells you just enough so as to leave you that feeling of exploring and off the rivers, it answers the questions that you will want to ask. Add to this the anecdotes, descriptions of descents, tales of terror and exhilaration and sections on the botany, geology, geography, wildlife and culture folk tales of Meghalaya and you have the complete works.'
+		<br>
+		<span style="color:#CACB9E;">Dave Manby, pioneer of whitewater exploration<span>
+		<hr style="margin-left:10%; width:80%">
 
-            			<h1>{{site.title}}</h1>
-						<h3>{{site.description}}</h3>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+	</p>
+	<p style="text-align: center">
 
-				<!-- Header -->
-					<header id="header">
-						<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
-					</header>
+		'Much more than just your typical kayak guidebook: an immersion in Indian culture with many interesting and useful facts both on and off the river. These three individuals have worked very hard finding and documenting these river gems. The knowledge they have in the area is unmatched by anyone and I am stoked to see all their work put together in this epic guidebook of Meghalaya.'
+		<br>
+		<span style="color:#CACB9E;">Aniol Serrasolses, 2016 kayak world champion<span>
+		<hr style="margin-left:10%; width:80%">
 
-				<!-- Nav -->
-					<nav id="nav">
+	</p>
 
-            {% include nav.html %}
+	<p style="text-align: center">
 
-					</nav>
+		'Good river guidebooks are a joy. They excite the reader with the possible, explain and describe the probable. They tell histories, both natural and personal. They inform and entice their readers without giving it all away. This guide to Meghalaya's whitewater satisfies all these prerequisites, and does it in colour with engaging maps too. It's enough to send any whitewater enthusiast to this tropical paddling paradise.'
+		<br>
+		<span style="color:#CACB9E;">Roman Dial, author of <i>Packrafting! An Introduction and How-to Guide</i><span>
+		<hr style="margin-left:10%; width:80%">
 
-					<!-- Main -->
-					<div id="main">
-						<!-- Featured Post -->
+	</p>
 
-							<section >
-								<ul class="actions fit ">
-									<li><a href="/guidebook/" class="button fit ">Meghalaya Rivers Guidebook Available Soon</a></li>
-								</ul>
-								<span class="image fit" style="width: 60%; left: 20%"><img src="{{ "/images/contents.png" | absolute_url }}" alt="" /></span>
-								
-							</section>
-							<!-- Pages -->
-							<header class="major">
-								<h2>Rivers</h2>
-							</header>
+	<p style="text-align: center">
+		'The "must-get" guidebook for anyone going to Meghalaya. This guide is simply the best tool to discover the rivers of this magical whitewater territory that is Meghalaya. Culture, flora, fauna, medical hazards, history and rivers, of course - it is all in there!'
+		<br>
+		<span style="color:#CACB9E;">Philippe Doux, publisher, <i>Kayak Session</i> magazine<span>
+		<hr style="margin-left:10%; width:80%">
+	</p>
 
-							<section class="pages">
-								{% assign riverPages = site.pages | where:"category","river" %}
-				                {% for page in riverPages  limit:4 %}
-                
-                				<article>
-									<a href="{{ page.url | absolute_url }}" class="image fit">
-										<img src="{{ page.thumbnail | absolute_url }}" alt=""/>
-										<div class="caption">{{page.title}}</div>
-									</a>
-								</article>
-  								
-                				{% endfor %}
-							</section>
+	<p style="text-align: center">
+		'This book does justice to the fabulous find that Meghalaya is for the global whitewater community. This is pretty much the best guidebook I have ever seen and it indeed has lived up to and beyond what I expected with this book.'
+		<br>
+		<span style="color:#CACB9E;">Shalabh Gahlaut, pioneer of Indian whitewater<span>
+		<hr style="margin-left:10%; width:80%">
+	</p>
 
-							<header class="major">
-								<h2>Blogs</h2>
-							</header>
-
-							<!-- Posts -->
-							<section class="posts">
-                				{% for post in site.posts limit:2 %}
-  								<article>
-  									<header>
-
-  										<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</h2>
-  									</header>
-  									<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
-  									<p>{{ post.excerpt }}</p>
-  								</article>
-                				{% endfor %}
-							</section>
-							<section>
-							<div class="resp-container">
-								<iframe class="resp-iframe" src="https://player.vimeo.com/video/76159918"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe>
-							</div>
-							<p style="padding-left: 20%;"><a href="https://vimeo.com/76159918">Show Up and Blow Up: Meghalaya (NE India)</a> from <a href="https://vimeo.com/user11216027">Luc Mehl</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-
-							</section>
-					</div>
-
-				<!-- Footer -->
-        {% include foot.html %}
-
-			</div>
-
-		<!-- Scripts -->
-		{% include scripts-main.html %}
-    {% include tracking.html %}
-
-	</body>
-</html>
+	<p style="text-align: center">
+		'This guidebook is an awesome resource which has put Meghalaya on the whitewater world map. It is colourful, detailed and well-researched - both in content and photos. It is the Lonely Planet for whitewater in Meghalaya!'
+		<br>
+		<span style="color:#CACB9E;">Anvesh Singh Thapa, <i>Expeditions India</i><span>
+	</p>
+</div>
+</section>

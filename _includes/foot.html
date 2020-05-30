@@ -1,21 +1,26 @@
 <footer id="footer">
   <section>
-    <form method="POST" action="https://formspree.io/{{site.email}}">
-      <div class="field half">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" />
-      </div>
-      <div class="field half">
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email" />
-      </div>
-      <div class="field">
-        <label for="message">Message</label>
-        <textarea name="message" id="message" rows="3"></textarea>
-      </div>
-      <ul class="actions">
-        <li><input type="submit" value="Send Message" /></li>
+      <ul id="footerNav" class="icons alt" style="text-align: center; margin: 0 0 0 0;">
+        <a href="/" style="border-bottom: 0px; padding-right: 3px;">HOME</a>
+        <a href="/book/" style="border-left: 2px solid #E2E2E2; border-bottom: 0px; padding-left: 5px; padding-right: 3px;">THE BOOK</a>
+        <a href="/whymeghalaya/" style="border-left: 2px solid #E2E2E2; border-bottom: 0px; padding-left: 5px; padding-right: 3px;">WHY MEGHALAYA</a>
+        <a href="/logistics/" style="border-left: 2px solid #E2E2E2; border-bottom: 0px; padding-left: 5px; padding-right: 3px;">LOGISTICS</a>
+        <a href="/buy/" style="border-left: 2px solid #E2E2E2; border-bottom: 0px; padding-left: 5px;">BUY THE BOOK</a>
       </ul>
-    </form>
+
+      <ul class="icons alt" style="text-align: center; margin: 0 0 0 0;">
+        <i class="fa fa-copyright" aria-hidden="true"></i>
+        <span>Meghalaya Rivers</span>
+      </ul>
+
+      <ul class="icons alt" style="text-align: center; margin: 0 0 1rem 0;">
+        <li><a href="mailto:{{site.email}}" class="icon  fa-envelope-o" rel="nofollow" target="_blank"><span class="label">Email</span></a></li>
+        <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow" target="_blank"><span class="label">Facebook</span></a></li>
+        <li><a href="https://instagram.com/{{site.instagram}}" class="icon fa-instagram" rel="nofollow" target="_blank"><span class="label">Instagram</span></a></li> 
+      </ul>
+      <ul class="icons alt" style="text-align: center; margin: 0 0 0 0;">
+        <img style="width: 10%" src="{{ "/images/beth.png" | absolute_url }}" alt="" />
+      </ul>
+    </section>
   </section>
 </footer>

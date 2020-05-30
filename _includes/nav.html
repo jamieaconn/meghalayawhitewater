@@ -3,13 +3,12 @@
   <li class="{% if page.url contains '/book/' %} active {% endif %}"><a href="{{ "/book/" | prepend: site.baseurl }}">The Book</a></li>
   <li class="{% if page.url contains '/whymeghalaya/' %} active {% endif %}"><a href="{{ "/whymeghalaya/" | prepend: site.baseurl }}">Why Meghalaya</a></li>
   <li class="{% if page.url contains '/logistics/' %} active {% endif %}"><a href="{{ "/logistics/" | prepend: site.baseurl }}">Logistics</a></li>
-  <li class="{% if page.url contains '/order/' %} active {% endif %}"><a href="{{ "/order/" | prepend: site.baseurl }}">Order The Book</a></li>
+  <li class="{% if page.url contains '/buy/' %} active {% endif %}"><a href="{{ "/buy/" | prepend: site.baseurl }}">Buy The Book</a></li>
 
 </ul>
 
-
-
 <ul class="icons">
-              <li><a href="https://instagram.com/{{site.instagram}}" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
-              <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
+	<li><a href="mailto:{{site.email}}" class="icon fa-envelope-o" rel="nofollow"><span class="label">Email</span></a></li>
+	<li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
+	<li><a href="https://instagram.com/{{site.instagram}}" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
 </ul>		

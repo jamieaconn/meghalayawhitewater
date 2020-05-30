@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: 
 title:  "A whistletop whitewater week"
 date:   2017-10-31
 excerpt: "Top tips from one weekend warrior to another"

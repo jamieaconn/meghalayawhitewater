@@ -1623,7 +1623,7 @@
 	}
 
 	body {
-		background-color: #5F7AB7;
+		background-color: #146259;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1889,7 +1889,7 @@
 		cursor: pointer;
 		display: inline-block;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 1.2rem;
+		font-size: 2rem;
 		font-weight: 900;
 		letter-spacing: 0.075em;
 		height: 3rem;
@@ -1899,6 +1899,8 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
+		margin-left: 30%;
+		width: 40%;
 	}
 
 		input[type="submit"].icon:before,
@@ -1982,7 +1984,7 @@
 			input[type="button"],
 			button,
 			.button {
-				font-size: 0.6rem;
+				font-size: 1.6rem;
 				height: 3.25rem;
 				line-height: 3.25rem;
 			}
@@ -2444,7 +2446,7 @@
 
 		.image.fit {
 			display: block;
-			margin: 2.5rem 0;
+			margin: 0.5rem 0;
 			width: 100%;
 			
 		}
@@ -3028,8 +3030,8 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: #5F7AB7;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+			background-color: #146259;
+			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)); /* , url("../../images/bg2.jpg");*/
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -3056,7 +3058,7 @@
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background: #5F7AB7;
+			background: #146259;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3667,7 +3669,7 @@
 			}
 
 			#main > .posts > * {
-				padding: 4rem;
+				padding: 2rem;
 				width: 50%;
 			}
 
@@ -4609,14 +4611,15 @@
 	.resp-iframe {
 	    position: absolute;
 	    top: 0;
-	    left: 10%;
-	    width: 80%;
+	    left: 0%;
+	    width: 100%;
 	    height: 100%;
 	    border: 0;
 	}
 
 	.resp-container {
 	    position: relative;
+	    margin: 0.5rem 0;
 	    overflow: hidden;
 	    padding-top: 56.25%;
 	}
