@@ -1,4 +1,2 @@
-# meghalayawhitewater
-
-
-bundle exec jekyll serve
+# run python server
+python -m http.server
